@@ -1,0 +1,13 @@
+opencv-python>=4.0.0
+numpy>=1.19.0
+flask>=2.0.0
+matplotlib>=3.4.0
+pillow>=8.0.0
+tqdm>=4.50.0
+requests>=2.25.0
+scipy>=1.6.0
+opencv-contrib-python>=4.5.5.62
+scikit-learn>=1.0.2
+imutils>=0.5.4
+pyyaml>=6.0
+python-dateutil>=2.8.2 

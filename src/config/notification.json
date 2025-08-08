@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "methods": {
+    "console": {
+      "enabled": true,
+      "min_severity": "低"
+    },
+    "file": {
+      "enabled": true,
+      "min_severity": "低",
+      "file_path": "alerts/alerts_log.txt"
+    },
+    "email": {
+      "enabled": false,
+      "min_severity": "中",
+      "smtp_server": "smtp.example.com",
+      "smtp_port": 587,
+      "username": "alert_system@example.com",
+      "password": "your_password_here",
+      "from_address": "alert_system@example.com",
+      "to_addresses": ["admin@example.com", "security@example.com"],
+      "use_tls": true
+    },
+    "sms": {
+      "enabled": false,
+      "min_severity": "高",
+      "api_key": "your_api_key_here",
+      "from_number": "+1234567890",
+      "to_numbers": ["+1234567891", "+1234567892"]
+    },
+    "webhook": {
+      "enabled": false,
+      "min_severity": "中",
+      "url": "https://example.com/webhook",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer your_token_here"
+      },
+      "method": "POST"
+    }
+  },
+  "alert_templates": {
+    "low": {
+      "subject": "低严重性警报: {rule_name}",
+      "body": "检测到低严重性事件:\n规则: {rule_name}\n描述: {description}\n时间: {timestamp}\n位置: {location}"
+    },
+    "medium": {
+      "subject": "中严重性警报: {rule_name}",
+      "body": "检测到中严重性事件:\n规则: {rule_name}\n描述: {description}\n时间: {timestamp}\n位置: {location}\n\n请及时查看和处理。"
+    },
+    "high": {
+      "subject": "高严重性警报: {rule_name}",
+      "body": "检测到高严重性事件:\n规则: {rule_name}\n描述: {description}\n时间: {timestamp}\n位置: {location}\n\n请立即查看和处理！"
+    }
+  },
+  "throttling": {
+    "enabled": true,
+    "max_alerts_per_minute": 10,
+    "max_alerts_per_rule": 5,
+    "cooldown_period": 300
+  },
+  "notification_hours": {
+    "enabled": false,
+    "start_time": "09:00",
+    "end_time": "18:00",
+    "ignore_high_severity": true
+  }
+}

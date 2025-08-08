@@ -1,0 +1,103 @@
+{
+  "rules": [
+    {
+      "id": "rule_1",
+      "name": "快速移动检测",
+      "description": "检测快速移动的人",
+      "type": "behavior",
+      "conditions": {
+        "behavior_type": "RUNNING",
+        "object_class": "person",
+        "min_duration": 2
+      },
+      "severity": "低",
+      "actions": ["log", "notify"]
+    },
+    {
+      "id": "rule_2",
+      "name": "逗留检测",
+      "description": "检测在特定区域逗留的人",
+      "type": "behavior",
+      "conditions": {
+        "behavior_type": "LOITERING",
+        "object_class": "person",
+        "min_duration": 10,
+        "regions": [
+          {"x1": 0, "y1": 0, "x2": 320, "y2": 240, "name": "禁止逗留区域"}
+        ]
+      },
+      "severity": "中",
+      "actions": ["log", "notify", "snapshot"]
+    },
+    {
+      "id": "rule_3",
+      "name": "人员接近检测",
+      "description": "检测两个人相互接近",
+      "type": "interaction",
+      "conditions": {
+        "interaction_type": "APPROACHING",
+        "object_classes": ["person", "person"],
+        "min_duration": 3
+      },
+      "severity": "低",
+      "actions": ["log"]
+    },
+    {
+      "id": "rule_4",
+      "name": "遗留物品检测",
+      "description": "检测可能被遗留的物品",
+      "type": "object",
+      "conditions": {
+        "object_class": "backpack|suitcase|handbag",
+        "is_stationary": true,
+        "min_duration": 15,
+        "no_owner_nearby": true
+      },
+      "severity": "高",
+      "actions": ["log", "notify", "snapshot", "alert"]
+    },
+    {
+      "id": "rule_5",
+      "name": "车辆进入禁区",
+      "description": "检测进入禁止区域的车辆",
+      "type": "region",
+      "conditions": {
+        "object_class": "car|truck|bus|motorcycle",
+        "regions": [
+          {"x1": 100, "y1": 100, "x2": 500, "y2": 400, "name": "禁止车辆区域"}
+        ],
+        "min_duration": 2
+      },
+      "severity": "中",
+      "actions": ["log", "notify", "snapshot"]
+    },
+    {
+      "id": "rule_6",
+      "name": "人员聚集检测",
+      "description": "检测大量人员聚集",
+      "type": "count",
+      "conditions": {
+        "object_class": "person",
+        "min_count": 5,
+        "regions": [
+          {"x1": 0, "y1": 0, "x2": 640, "y2": 480, "name": "全场景"}
+        ],
+        "min_duration": 5
+      },
+      "severity": "中",
+      "actions": ["log", "notify", "snapshot"]
+    },
+    {
+      "id": "rule_7",
+      "name": "场景语义分析",
+      "description": "通过视觉语言模型检测特定场景",
+      "type": "semantic",
+      "conditions": {
+        "keywords": ["fighting", "fire", "smoke", "weapon", "falling", "conflict"],
+        "min_confidence": 0.6
+      },
+      "severity": "高",
+      "actions": ["log", "notify", "snapshot", "alert"]
+    }
+  ]
+} 

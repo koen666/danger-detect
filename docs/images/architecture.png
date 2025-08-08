@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .module { fill: #e1f5fe; stroke: #0288d1; stroke-width: 2; }
+    .module-title { font-family: Arial; font-size: 14px; font-weight: bold; fill: #01579b; }
+    .module-desc { font-family: Arial; font-size: 12px; fill: #333; }
+    .arrow { stroke: #424242; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .data { font-family: Arial; font-size: 11px; fill: #757575; }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242" />
+    </marker>
+  </defs>
+  
+  <rect x="10" y="10" width="780" height="60" rx="5" ry="5" fill="#01579b" />
+  <text x="400" y="45" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">视频监控危险行为检测系统架构</text>
+  
+  <!-- Video Input Module -->
+  <rect x="50" y="120" width="160" height="100" rx="10" ry="10" class="module" />
+  <text x="130" y="145" class="module-title" text-anchor="middle">视频输入模块</text>
+  <text x="130" y="165" class="module-desc" text-anchor="middle">VideoCapture</text>
+  <text x="130" y="185" class="module-desc" text-anchor="middle">FrameProcessor</text>
+  
+  <!-- Feature Extraction Module -->
+  <rect x="310" y="120" width="170" height="120" rx="10" ry="10" class="module" />
+  <text x="395" y="145" class="module-title" text-anchor="middle">特征提取模块</text>
+  <text x="395" y="165" class="module-desc" text-anchor="middle">MotionFeatureManager</text>
+  <text x="395" y="185" class="module-desc" text-anchor="middle">OpticalFlowExtractor</text>
+  <text x="395" y="205" class="module-desc" text-anchor="middle">MotionHistoryExtractor</text>
+  
+  <!-- Behavior Analysis Module -->
+  <rect x="570" y="120" width="170" height="100" rx="10" ry="10" class="module" />
+  <text x="655" y="145" class="module-title" text-anchor="middle">行为分析模块</text>
+  <text x="655" y="165" class="module-desc" text-anchor="middle">DangerRecognizer</text>
+  <text x="655" y="185" class="module-desc" text-anchor="middle">BehaviorAnalysis</text>
+  
+  <!-- Alert System Module -->
+  <rect x="570" y="290" width="170" height="130" rx="10" ry="10" class="module" />
+  <text x="655" y="315" class="module-title" text-anchor="middle">告警系统</text>
+  <text x="655" y="335" class="module-desc" text-anchor="middle">AlertSystem</text>
+  <text x="655" y="355" class="module-desc" text-anchor="middle">AlertProcessor</text>
+  <text x="655" y="375" class="module-desc" text-anchor="middle">NotificationManager</text>
+  
+  <!-- Web Interface Module -->
+  <rect x="310" y="290" width="170" height="90" rx="10" ry="10" class="module" />
+  <text x="395" y="315" class="module-title" text-anchor="middle">Web界面</text>
+  <text x="395" y="335" class="module-desc" text-anchor="middle">Flask Web Server</text>
+  <text x="395" y="355" class="module-desc" text-anchor="middle">HTML Templates</text>
+  
+  <!-- AI Integration Module -->
+  <rect x="50" y="290" width="160" height="100" rx="10" ry="10" class="module" />
+  <text x="130" y="315" class="module-title" text-anchor="middle">AI集成模块</text>
+  <text x="130" y="335" class="module-desc" text-anchor="middle">ObjectDetection</text>
+  <text x="130" y="355" class="module-desc" text-anchor="middle">QwenVL</text>
+
+  <!-- Core System Module -->
+  <rect x="310" y="430" width="170" height="50" rx="10" ry="10" class="module" />
+  <text x="395" y="455" class="module-title" text-anchor="middle">系统核心</text>
+  <text x="395" y="475" class="module-desc" text-anchor="middle">AllInOneSystem</text>
+  
+  <!-- Connection Arrows -->
+  <path d="M 210 170 L 310 170" class="arrow" />
+  <text x="260" y="160" class="data" text-anchor="middle">视频帧</text>
+  
+  <path d="M 480 170 L 570 170" class="arrow" />
+  <text x="525" y="160" class="data" text-anchor="middle">运动特征</text>
+  
+  <path d="M 655 220 L 655 290" class="arrow" />
+  <text x="680" y="255" class="data" text-anchor="middle">危险行为</text>
+  
+  <path d="M 570 330 L 480 330" class="arrow" />
+  <text x="525" y="320" class="data" text-anchor="middle">告警通知</text>
+  
+  <path d="M 310 330 L 210 330" class="arrow" />
+  <text x="260" y="320" class="data" text-anchor="middle">视觉分析请求</text>
+  
+  <path d="M 130 290 L 130 220" class="arrow" />
+  <text x="155" y="255" class="data" text-anchor="middle">物体检测结果</text>
+  
+  <path d="M 395 290 L 395 240" class="arrow" />
+  <text x="420" y="265" class="data" text-anchor="middle">可视化数据</text>
+  
+  <path d="M 395 430 L 395 380" class="arrow" />
+  <text x="420" y="405" class="data" text-anchor="middle">控制</text>
+  
+  <path d="M 310 455 L 220 390" class="arrow" />
+  <path d="M 480 455 L 570 390" class="arrow" />
+</svg> 

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全功能视频监控系统</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .video-container {
+            flex: 1 1 70%;
+            background-color: #1f2022;
+            border-radius: 5px;
+            overflow: hidden;
+            min-height: 480px;
+            position: relative;
+        }
+        .info-panel {
+            flex: 1 1 25%;
+            margin-left: 20px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        button.stop {
+            background-color: #e74c3c;
+        }
+        button.stop:hover {
+            background-color: #c0392b;
+        }
+        button.pause {
+            background-color: #f39c12;
+        }
+        button.pause:hover {
+            background-color: #d35400;
+        }
+        .stat-box {
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+        }
+        .stat-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .alert-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        .alert-item {
+            padding: 10px;
+            border-left: 4px solid #e74c3c;
+            background-color: #f8f9fa;
+            margin-bottom: 10px;
+            border-radius: 0 4px 4px 0;
+        }
+        .alert-time {
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+        .alert-type {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .alert-desc {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+        }
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .status-running {
+            background-color: #2ecc71;
+        }
+        .status-stopped {
+            background-color: #e74c3c;
+        }
+        .status-paused {
+            background-color: #f39c12;
+        }
+        .video-stream {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .main {
+                flex-direction: column;
+            }
+            .info-panel {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>全功能视频监控系统</h1>
+            <p>运动分析 + 危险行为检测 + AI识别</p>
+        </header>
+        
+        <div class="main">
+            <div class="video-container">
+                <div class="loading">正在连接视频流...</div>
+                <img class="video-stream" src="{{ url_for('video_feed') }}" alt="视频流">
+            </div>
+            
+            <div class="info-panel">
+                <h2>系统状态</h2>
+                <div class="system-status">
+                    <p><span class="status-indicator status-running" id="status-dot"></span> <span id="status-text">运行中</span></p>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-title">实时帧率</div>
+                    <div class="stat-value" id="fps">0.0</div>
+                </div>
+                
+                <div class="stat-row" style="display: flex; gap: 10px;">
+                    <div class="stat-box" style="flex: 1;">
+                        <div class="stat-title">处理帧数</div>
+                        <div class="stat-value" id="processed-count">0</div>
+                    </div>
+                    <div class="stat-box" style="flex: 1;">
+                        <div class="stat-title">告警数</div>
+                        <div class="stat-value" id="alert-count" style="color: #e74c3c;">0</div>
+                    </div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-title">运行时间</div>
+                    <div class="stat-value" id="running-time">0秒</div>
+                </div>
+                
+                <div class="controls">
+                    <button id="start-btn">启动</button>
+                    <button id="pause-btn" class="pause">暂停</button>
+                    <button id="stop-btn" class="stop">停止</button>
+                </div>
+                
+                <h3>最近告警</h3>
+                <div class="alert-list" id="alert-list">
+                    <!-- 告警列表会通过JavaScript动态添加 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // DOM元素
+            const fpsElement = document.getElementById('fps');
+            const processedCountElement = document.getElementById('processed-count');
+            const alertCountElement = document.getElementById('alert-count');
+            const runningTimeElement = document.getElementById('running-time');
+            const statusDotElement = document.getElementById('status-dot');
+            const statusTextElement = document.getElementById('status-text');
+            const alertListElement = document.getElementById('alert-list');
+            const startBtn = document.getElementById('start-btn');
+            const pauseBtn = document.getElementById('pause-btn');
+            const stopBtn = document.getElementById('stop-btn');
+            const loadingElement = document.querySelector('.loading');
+            const videoElement = document.querySelector('.video-stream');
+            
+            // 系统状态
+            let systemState = 'running';
+            let previousAlertCount = 0;
+            
+            // 图像加载处理
+            videoElement.onload = function() {
+                loadingElement.style.display = 'none';
+            };
+            
+            videoElement.onerror = function() {
+                loadingElement.textContent = '视频流连接失败，请检查系统状态';
+            };
+            
+            // 更新状态UI
+            function updateStatusUI(status) {
+                statusDotElement.className = 'status-indicator';
+                
+                if (status === 'running') {
+                    statusDotElement.classList.add('status-running');
+                    statusTextElement.textContent = '运行中';
+                } else if (status === 'stopped') {
+                    statusDotElement.classList.add('status-stopped');
+                    statusTextElement.textContent = '已停止';
+                } else if (status === 'paused') {
+                    statusDotElement.classList.add('status-paused');
+                    statusTextElement.textContent = '已暂停';
+                }
+            }
+            
+            // 添加告警
+            function addAlert(type, time) {
+                const alertItem = document.createElement('div');
+                alertItem.className = 'alert-item';
+                
+                const alertTime = document.createElement('div');
+                alertTime.className = 'alert-time';
+                alertTime.textContent = time;
+                
+                const alertType = document.createElement('div');
+                alertType.className = 'alert-type';
+                alertType.textContent = type;
+                
+                const alertDesc = document.createElement('div');
+                alertDesc.className = 'alert-desc';
+                alertDesc.textContent = '系统检测到潜在危险行为';
+                
+                alertItem.appendChild(alertTime);
+                alertItem.appendChild(alertType);
+                alertItem.appendChild(alertDesc);
+                
+                alertListElement.prepend(alertItem);
+                
+                // 限制显示10条
+                if (alertListElement.children.length > 10) {
+                    alertListElement.removeChild(alertListElement.lastChild);
+                }
+            }
+            
+            // 获取系统统计信息
+            function fetchStats() {
+                fetch('/stats')
+                    .then(response => response.json())
+                    .then(data => {
+                        fpsElement.textContent = data.fps.toFixed(1);
+                        processedCountElement.textContent = data.processed_count;
+                        alertCountElement.textContent = data.alert_count;
+                        runningTimeElement.textContent = data.running_time;
+                        
+                        // 检查是否有新告警
+                        if (data.alert_count > previousAlertCount) {
+                            const now = new Date();
+                            const timeStr = now.toLocaleTimeString();
+                            addAlert('危险行为', timeStr);
+                            previousAlertCount = data.alert_count;
+                        }
+                        
+                        // 更新系统状态
+                        systemState = data.status.toLowerCase();
+                        updateStatusUI(systemState);
+                    })
+                    .catch(err => {
+                        console.error('获取统计信息失败:', err);
+                    });
+            }
+            
+            // 控制系统
+            function controlSystem(action) {
+                fetch('/control', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ action: action }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('控制结果:', data);
+                    
+                    // 更新视频流（通过添加时间戳避免缓存）
+                    if (action === 'start') {
+                        videoElement.src = '/video_feed?' + new Date().getTime();
+                        loadingElement.style.display = 'block';
+                        loadingElement.textContent = '正在连接视频流...';
+                    }
+                })
+                .catch(err => {
+                    console.error('控制请求失败:', err);
+                });
+            }
+            
+            // 绑定按钮事件
+            startBtn.addEventListener('click', function() {
+                controlSystem('start');
+            });
+            
+            pauseBtn.addEventListener('click', function() {
+                controlSystem('pause');
+            });
+            
+            stopBtn.addEventListener('click', function() {
+                controlSystem('stop');
+            });
+            
+            // 定期获取统计信息
+            setInterval(fetchStats, 1000);
+            
+            // 初始获取一次统计信息
+            fetchStats();
+        });
+    </script>
+</body>
+</html>
+        
