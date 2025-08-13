@@ -1,0 +1,1021 @@
+2025-08-13 11:30:33,177 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 11:30:33,181 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 11:30:33,762 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 11:30:33,762 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 11:30:33,764 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 11:30:33,764 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 11:30:33,764 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 11:30:33,765 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 11:30:33,765 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 11:30:33,765 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 11:30:33,765 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 11:30:38,726 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 11:32:51,001 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 11:32:51,001 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 11:32:51,112 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 11:32:51,326 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 11:32:51,327 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 137.56 Ãë
+×ÜÖ¡Êı: 3087
+´¦ÀíÖ¡Êı: 1029 (33.3%)
+Æ½¾ùÖ¡ÂÊ: 22.44 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: True
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 11:32:51,328 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_113251.txt
+2025-08-13 11:32:51,329 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 11:32:54,491 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 11:32:54,492 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 11:32:54,627 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 11:32:54,628 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 11:32:54,629 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 11:32:54,629 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 11:32:54,629 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 11:32:54,630 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 11:32:54,631 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 11:32:54,631 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 11:32:54,631 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 11:32:59,243 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 11:41:43,249 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 11:41:43,250 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 11:41:43,279 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 11:41:43,560 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 11:41:43,561 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 528.93 Ãë
+×ÜÖ¡Êı: 11782
+´¦ÀíÖ¡Êı: 3927 (33.3%)
+Æ½¾ùÖ¡ÂÊ: 22.28 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: True
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 11:41:43,562 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_114143.txt
+2025-08-13 11:41:43,562 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 11:44:03,065 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 11:44:03,066 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 11:44:03,199 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 11:44:03,199 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 11:44:03,201 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 11:44:03,201 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 11:44:03,203 - AllInOneSystem - INFO - Web·şÎñÆ÷ÒÑÆô¶¯£¬·ÃÎÊ http://localhost:5000/
+2025-08-13 11:44:03,203 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 11:44:03,204 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 11:44:03,204 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 11:44:03,204 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 11:44:03,215 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-08-13 11:44:03,215 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 11:44:08,166 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 11:44:11,306 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 11:44:11,312 - werkzeug - INFO - 192.168.1.11 - - [13/Aug/2025 11:44:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 11:44:11,492 - werkzeug - INFO - 192.168.1.11 - - [13/Aug/2025 11:44:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-13 11:44:13,105 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 11:44:13,107 - werkzeug - INFO - 192.168.1.11 - - [13/Aug/2025 11:44:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 11:44:20,034 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 11:44:20,037 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 11:44:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 11:44:22,928 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 11:44:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-08-13 11:44:33,203 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 11:44:33,205 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 11:44:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 11:44:33,330 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 11:44:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-13 11:57:21,601 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 11:57:21,616 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 11:57:21,920 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 11:57:21,922 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 798.72 Ãë
+×ÜÖ¡Êı: 11446
+´¦ÀíÖ¡Êı: 3815 (33.3%)
+Æ½¾ùÖ¡ÂÊ: 14.33 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: True
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 11:57:21,923 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_115721.txt
+2025-08-13 11:57:21,923 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 11:57:44,115 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 11:57:44,116 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 11:57:44,252 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 11:57:44,252 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 11:57:44,254 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 11:57:44,254 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 11:57:44,254 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 11:57:44,255 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 11:57:44,255 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 11:57:44,255 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 11:57:44,256 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 11:57:48,966 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:00:06,156 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:00:06,156 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:00:06,213 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:00:06,493 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 12:00:06,495 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 142.24 Ãë
+×ÜÖ¡Êı: 2015
+´¦ÀíÖ¡Êı: 671 (33.3%)
+Æ½¾ùÖ¡ÂÊ: 14.17 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:00:06,497 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_120006.txt
+2025-08-13 12:00:06,497 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:01:08,659 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:01:08,660 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:01:08,798 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:01:08,799 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:01:08,800 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:01:08,800 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:01:08,803 - AllInOneSystem - INFO - Web·şÎñÆ÷ÒÑÆô¶¯£¬·ÃÎÊ http://localhost:5000/
+2025-08-13 12:01:08,803 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:01:08,804 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:01:08,804 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:01:08,804 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:01:08,819 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-08-13 12:01:08,819 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 12:01:13,497 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:01:18,218 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 12:01:18,221 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 12:01:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 12:01:27,910 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 12:01:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-08-13 12:03:58,527 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:03:58,531 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:03:58,813 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 12:03:58,815 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 170.01 Ãë
+×ÜÖ¡Êı: 2990
+´¦ÀíÖ¡Êı: 996 (33.3%)
+Æ½¾ùÖ¡ÂÊ: 17.59 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: True
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:03:58,816 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_120358.txt
+2025-08-13 12:03:58,816 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:06:16,370 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:06:16,370 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:06:16,503 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:06:16,503 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:06:16,505 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:06:16,505 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:06:16,505 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:06:16,506 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:06:16,506 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:06:16,506 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:06:16,506 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:06:21,180 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:06:28,897 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:06:28,897 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:06:28,927 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:06:29,203 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 12:06:29,204 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 12.70 Ãë
+×ÜÖ¡Êı: 179
+´¦ÀíÖ¡Êı: 59 (33.0%)
+Æ½¾ùÖ¡ÂÊ: 14.10 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: True
+
+2025-08-13 12:06:29,205 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_120629.txt
+2025-08-13 12:06:29,205 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:07:42,520 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:07:42,521 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:07:42,678 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:07:42,678 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:07:42,682 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:07:42,682 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:07:42,685 - AllInOneSystem - INFO - Web·şÎñÆ÷ÒÑÆô¶¯£¬·ÃÎÊ http://localhost:5000/
+2025-08-13 12:07:42,685 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:07:42,686 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:07:42,686 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:07:42,686 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:07:42,699 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-08-13 12:07:42,699 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 12:07:45,017 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:07:45,711 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:07:46,020 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 3.34 Ãë
+×ÜÖ¡Êı: 0
+´¦ÀíÖ¡Êı: 0 (0.0%)
+Æ½¾ùÖ¡ÂÊ: 0.00 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: True
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:07:46,022 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_120746.txt
+2025-08-13 12:07:46,022 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:07:55,027 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:07:55,028 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:07:55,167 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:07:55,168 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:07:55,170 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:07:55,170 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:07:55,172 - AllInOneSystem - INFO - Web·şÎñÆ÷ÒÑÆô¶¯£¬·ÃÎÊ http://localhost:5000/
+2025-08-13 12:07:55,172 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:07:55,172 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:07:55,173 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:07:55,173 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:07:55,187 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2025-08-13 12:07:55,188 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 12:07:58,206 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 12:07:58,213 - werkzeug - INFO - 127.0.0.1 - - [13/Aug/2025 12:07:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 12:08:00,142 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:08:08,203 - all_in_one_system - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\danger-detect\projects06017089009-main\src\all_in_one_system.py", line 156, in index
+    return render_template('index.html')
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\AN\envs\danger-detect\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AN\envs\danger-detect\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2025-08-13 12:08:08,207 - werkzeug - INFO - 192.168.1.11 - - [13/Aug/2025 12:08:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-08-13 12:08:44,535 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:08:44,639 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:08:44,878 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 12:08:44,879 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 49.71 Ãë
+×ÜÖ¡Êı: 846
+´¦ÀíÖ¡Êı: 282 (33.3%)
+Æ½¾ùÖ¡ÂÊ: 17.02 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: True
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:08:44,880 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_120844.txt
+2025-08-13 12:08:44,880 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:08:48,316 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:08:48,317 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:08:48,449 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:08:48,450 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:08:48,451 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:08:48,452 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:08:48,452 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:08:48,452 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:08:48,452 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:08:48,452 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:08:48,453 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:08:53,153 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:10:39,026 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:10:39,027 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:10:39,033 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:10:39,383 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 12:10:39,385 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 110.93 Ãë
+×ÜÖ¡Êı: 1708
+´¦ÀíÖ¡Êı: 1706 (99.9%)
+Æ½¾ùÖ¡ÂÊ: 15.40 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 1
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:10:39,386 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_121039.txt
+2025-08-13 12:10:39,386 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:10:47,970 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:10:47,971 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:10:48,094 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:10:48,094 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:10:48,096 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:10:48,097 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:10:48,097 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:10:48,097 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:10:48,097 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:10:48,097 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:10:48,098 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:10:48,818 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:10:48,818 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:10:49,100 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:10:49,827 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 1.73 Ãë
+×ÜÖ¡Êı: 0
+´¦ÀíÖ¡Êı: 0 (0.0%)
+Æ½¾ùÖ¡ÂÊ: 0.00 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 1
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:10:49,829 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_121049.txt
+2025-08-13 12:10:49,829 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:11:00,162 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:11:00,163 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:11:00,299 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:11:00,299 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:11:00,301 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:11:00,301 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:11:00,301 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:11:00,301 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:11:00,302 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:11:00,302 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:11:00,302 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:11:00,453 - AllInOneSystem - ERROR - ÎŞ·¨´ò¿ªÊÓÆµÔ´: 1
+2025-08-13 12:11:00,461 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:11:01,302 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:11:01,303 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 1.00 Ãë
+×ÜÖ¡Êı: 0
+´¦ÀíÖ¡Êı: 0 (0.0%)
+Æ½¾ùÖ¡ÂÊ: 0.00 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 1
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 1
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:11:01,305 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_121101.txt
+2025-08-13 12:11:01,306 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:11:10,132 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:11:10,133 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:11:10,262 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:11:10,262 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:11:10,265 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:11:10,265 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:11:10,265 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:11:10,266 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:11:10,266 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:11:10,266 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:11:10,266 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:11:15,196 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:12:33,707 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:12:33,708 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:12:33,850 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:12:33,851 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:12:33,852 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:12:33,853 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:12:33,853 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:12:33,853 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:12:33,853 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:12:33,853 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:12:33,854 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:12:39,006 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:12:39,046 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:12:41,157 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:12:43,248 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:12:45,333 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:12:47,388 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:12:49,455 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:12:50,339 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:12:50,339 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:12:50,996 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:12:51,354 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 17.50 Ãë
+×ÜÖ¡Êı: 0
+´¦ÀíÖ¡Êı: 0 (0.0%)
+Æ½¾ùÖ¡ÂÊ: 0.00 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 1
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:12:51,355 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_121251.txt
+2025-08-13 12:12:51,355 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:18:59,460 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:18:59,460 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:18:59,600 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:18:59,600 - AllInOneSystem - WARNING - Î´ÕÒµ½±ØÒªµÄAIÒÀÀµ£¬AI¹¦ÄÜ½«±»½ûÓÃ
+2025-08-13 12:18:59,602 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:18:59,602 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:18:59,602 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:18:59,603 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:18:59,603 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:18:59,603 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:18:59,604 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:19:04,626 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:19:04,663 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:19:06,737 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:19:08,793 - AllInOneSystem - WARNING - ÊÓÆµÖ¡»ñÈ¡Ê§°Ü£¬³¢ÊÔÖØĞÂÁ¬½Ó...
+2025-08-13 12:19:09,360 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:19:09,360 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:19:09,702 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:19:10,371 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 10.77 Ãë
+×ÜÖ¡Êı: 0
+´¦ÀíÖ¡Êı: 0 (0.0%)
+Æ½¾ùÖ¡ÂÊ: 0.00 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: False
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: True
+
+2025-08-13 12:19:10,372 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_121910.txt
+2025-08-13 12:19:10,373 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹
+2025-08-13 12:55:23,461 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëMotionFeatureManager
+2025-08-13 12:55:23,462 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëDangerRecognizer
+2025-08-13 12:55:23,620 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëFlask WebÄ£¿é
+2025-08-13 12:55:26,757 - AllInOneSystem - INFO - ³É¹¦µ¼ÈëAI¹¦ÄÜÄ£¿é
+2025-08-13 12:55:26,759 - MotionFeatureManager - INFO - ³õÊ¼»¯ÔË¶¯ÌØÕ÷¹ÜÀíÆ÷: ¹âÁ÷=True(farneback), ÔË¶¯ÀúÊ·=False, ±³¾°¼õ³ı=False, ÂÖÀª=True, ¹Ø¼üµã=False, GPU=False
+2025-08-13 12:55:26,759 - DangerRecognizer - INFO - Î£ÏÕĞĞÎªÊ¶±ğÆ÷ÒÑ³õÊ¼»¯£¬ÌØÕ÷µããĞÖµ:80, ±ä»¯ÂÊãĞÖµ:1.5
+2025-08-13 12:55:31,372 - AllInOneSystem - INFO - ³É¹¦¼ÓÔØAIÄ£ĞÍ: yolov8n
+2025-08-13 12:55:31,372 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³³õÊ¼»¯Íê³É
+2025-08-13 12:55:31,373 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ²¶»ñÏß³Ì
+2025-08-13 12:55:31,374 - AllInOneSystem - INFO - ¿ªÊ¼ÊÓÆµ´¦ÀíÏß³Ì
+2025-08-13 12:55:31,374 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÆô¶¯
+2025-08-13 12:55:31,375 - AllInOneSystem - INFO - ¿ªÊ¼ÏÔÊ¾Ñ­»·
+2025-08-13 12:55:36,238 - AllInOneSystem - INFO - ÊÓÆµ·Ö±æÂÊ: 640x480
+2025-08-13 12:56:06,026 - AllInOneSystem - INFO - ÏÔÊ¾Ñ­»·½áÊø
+2025-08-13 12:56:06,026 - AllInOneSystem - INFO - ÓÃ»§ÖĞ¶Ï
+2025-08-13 12:56:06,043 - AllInOneSystem - INFO - ÊÓÆµ´¦ÀíÏß³Ì½áÊø
+2025-08-13 12:56:06,334 - AllInOneSystem - INFO - ÊÓÆµ²¶»ñÏß³Ì½áÊø
+2025-08-13 12:56:06,336 - AllInOneSystem - INFO - 
+==== ÏµÍ³±¨¸æ ====
+ÔËĞĞÊ±¼ä: 39.58 Ãë
+×ÜÖ¡Êı: 710
+´¦ÀíÖ¡Êı: 230 (32.4%)
+Æ½¾ùÖ¡ÂÊ: 17.94 FPS
+¸æ¾¯×ÜÊı: 0
+
+¸æ¾¯·ÖÀàÍ³¼Æ:
+
+ÏµÍ³ÅäÖÃ:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: True
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 12:56:06,337 - AllInOneSystem - INFO - ±¨¸æÒÑ±£´æµ½: system_output\report_20250813_125606.txt
+2025-08-13 12:56:06,337 - AllInOneSystem - INFO - È«¹¦ÄÜÊÓÆµ¼à¿ØÏµÍ³ÒÑÍ£Ö¹

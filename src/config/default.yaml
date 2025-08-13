@@ -1,0 +1,19 @@
+# 视频配置
+video:
+  source: 0           # 视频源
+  width: 640          # 宽度
+  height: 480         # 高度
+  fps: 30             # 目标帧率
+
+# 危险行为检测配置
+danger_detection:
+  feature_threshold: 100  # 特征点阈值
+  area_threshold: 0.05    # 区域阈值
+  alert_cooldown: 10      # 告警冷却时间(帧)
+
+# 系统配置
+system:
+  process_every: 3    # 每N帧处理一次
+  use_gpu: false      # 是否使用GPU
+  save_alerts: true   # 是否保存告警帧
+  output_dir: "output" # 输出目录

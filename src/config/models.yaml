@@ -1,0 +1,33 @@
+vision_models:
+  default: "yolov8n"
+  options:
+    - name: "yolov8n"
+      path: "models/yolov8n.pt"
+      confidence: 0.5
+    - name: "clip"
+      path: "openai/clip-vit-base-patch32"
+      device: "cuda"
+
+multimodal_models:
+  default: "openai"
+  options:
+    - name: "openai"
+      type: "api"
+      model: "gpt-4-vision-preview"
+      api_key_env: "OPENAI_API_KEY"
+    - name: "qwen-vl"
+      type: "local"
+      path: "Qwen/Qwen-VL-Chat"
+      device: "cuda"
+
+llm_models:
+  default: "openai"
+  options:
+    - name: "openai"
+      type: "api"
+      model: "gpt-4-turbo"
+      api_key_env: "OPENAI_API_KEY"
+    - name: "llama"
+      type: "local"
+      path: "meta-llama/Llama-3-8B-Instruct"
+      device: "cuda"
