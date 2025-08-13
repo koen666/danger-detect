@@ -1019,3 +1019,115 @@ jinja2.exceptions.TemplateNotFound: index.html
 
 2025-08-13 12:56:06,337 - AllInOneSystem - INFO - 报告已保存到: system_output\report_20250813_125606.txt
 2025-08-13 12:56:06,337 - AllInOneSystem - INFO - 全功能视频监控系统已停止
+2025-08-13 12:57:11,374 - AllInOneSystem - INFO - 成功导入MotionFeatureManager
+2025-08-13 12:57:11,374 - AllInOneSystem - INFO - 成功导入DangerRecognizer
+2025-08-13 12:57:11,514 - AllInOneSystem - INFO - 成功导入Flask Web模块
+2025-08-13 12:57:14,597 - AllInOneSystem - INFO - 成功导入AI功能模块
+2025-08-13 13:21:41,153 - AllInOneSystem - INFO - 成功导入MotionFeatureManager
+2025-08-13 13:21:41,153 - AllInOneSystem - INFO - 成功导入DangerRecognizer
+2025-08-13 13:21:41,319 - AllInOneSystem - INFO - 成功导入Flask Web模块
+2025-08-13 13:21:44,558 - AllInOneSystem - INFO - 成功导入AI功能模块
+2025-08-13 13:21:44,563 - MotionFeatureManager - INFO - 初始化运动特征管理器: 光流=True(farneback), 运动历史=False, 背景减除=False, 轮廓=True, 关键点=False, GPU=False
+2025-08-13 13:21:44,563 - DangerRecognizer - INFO - 危险行为识别器已初始化，特征点阈值:80, 变化率阈值:1.5
+2025-08-13 13:21:44,691 - AllInOneSystem - INFO - 成功加载AI模型: yolov8n
+2025-08-13 13:21:44,691 - AllInOneSystem - INFO - 全功能视频监控系统初始化完成
+2025-08-13 13:21:44,692 - AllInOneSystem - INFO - 开始视频捕获线程
+2025-08-13 13:21:44,693 - AllInOneSystem - INFO - 开始视频处理线程
+2025-08-13 13:21:44,693 - AllInOneSystem - INFO - 全功能视频监控系统已启动
+2025-08-13 13:21:44,693 - AllInOneSystem - INFO - 开始显示循环
+2025-08-13 13:21:50,068 - AllInOneSystem - INFO - 视频分辨率: 640x480
+2025-08-13 13:23:05,940 - AllInOneSystem - INFO - 显示循环结束
+2025-08-13 13:23:05,940 - AllInOneSystem - INFO - 用户中断
+2025-08-13 13:23:05,940 - AllInOneSystem - INFO - 视频处理线程结束
+2025-08-13 13:23:06,221 - AllInOneSystem - INFO - 视频捕获线程结束
+2025-08-13 13:23:06,223 - AllInOneSystem - INFO - 
+==== 系统报告 ====
+运行时间: 81.66 秒
+总帧数: 1833
+处理帧数: 603 (32.9%)
+平均帧率: 22.45 FPS
+告警总数: 0
+
+告警分类统计:
+
+系统配置:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: True
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 13:23:06,223 - AllInOneSystem - INFO - 报告已保存到: system_output\report_20250813_132306.txt
+2025-08-13 13:23:06,223 - AllInOneSystem - INFO - 全功能视频监控系统已停止
+2025-08-13 13:23:19,802 - AllInOneSystem - INFO - 成功导入MotionFeatureManager
+2025-08-13 13:23:19,802 - AllInOneSystem - INFO - 成功导入DangerRecognizer
+2025-08-13 13:23:19,953 - AllInOneSystem - INFO - 成功导入Flask Web模块
+2025-08-13 13:23:23,055 - AllInOneSystem - INFO - 成功导入AI功能模块
+2025-08-13 13:23:23,057 - MotionFeatureManager - INFO - 初始化运动特征管理器: 光流=True(farneback), 运动历史=False, 背景减除=False, 轮廓=True, 关键点=False, GPU=False
+2025-08-13 13:23:23,057 - DangerRecognizer - INFO - 危险行为识别器已初始化，特征点阈值:80, 变化率阈值:1.5
+2025-08-13 13:23:23,146 - AllInOneSystem - INFO - 成功加载AI模型: yolov8n
+2025-08-13 13:23:23,146 - AllInOneSystem - INFO - 全功能视频监控系统初始化完成
+2025-08-13 13:23:23,146 - AllInOneSystem - INFO - 开始视频捕获线程
+2025-08-13 13:23:23,147 - AllInOneSystem - INFO - 开始视频处理线程
+2025-08-13 13:23:23,147 - AllInOneSystem - INFO - 全功能视频监控系统已启动
+2025-08-13 13:23:23,147 - AllInOneSystem - INFO - 开始显示循环
+2025-08-13 13:23:24,748 - AllInOneSystem - INFO - 显示循环结束
+2025-08-13 13:23:24,748 - AllInOneSystem - INFO - 用户中断
+2025-08-13 13:23:25,158 - AllInOneSystem - INFO - 视频处理线程结束
+2025-08-13 13:23:25,750 - AllInOneSystem - INFO - 
+==== 系统报告 ====
+运行时间: 2.69 秒
+总帧数: 0
+处理帧数: 0 (0.0%)
+平均帧率: 0.00 FPS
+告警总数: 0
+
+告警分类统计:
+
+系统配置:
+  - source: 0
+  - width: 640
+  - height: 480
+  - loop_video: False
+  - process_every: 3
+  - process_scale: 1.0
+  - max_fps: 30
+  - use_gpu: False
+  - use_motion_history: False
+  - minimal_ui: False
+  - feature_threshold: 80
+  - area_threshold: 0.05
+  - alert_cooldown: 10
+  - min_confidence: 0.5
+  - alert_region: None
+  - enable_ai: True
+  - vision_model: yolov8n
+  - ai_interval: 20
+  - ai_confidence: 0.4
+  - web_interface: False
+  - web_port: 5000
+  - output: system_output
+  - record: False
+  - save_alerts: False
+
+2025-08-13 13:23:25,751 - AllInOneSystem - INFO - 报告已保存到: system_output\report_20250813_132325.txt
+2025-08-13 13:23:25,751 - AllInOneSystem - INFO - 全功能视频监控系统已停止
